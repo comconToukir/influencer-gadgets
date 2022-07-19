@@ -1,0 +1,83 @@
+/* font imports*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500,700&display=swap');
+
+/* common styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* utility classes */
+.container {
+  width: 85%;
+}
+.u-flex {
+  display: flex;
+}
+.u-grid {
+  display: grid;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.align-items-center {
+  align-items: center;
+}
+.pink-button {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #E02C6D;
+  padding: 10px 24px;
+  margin-top: 20px;
+}
+
+/* navigation styles */
+nav {
+  justify-content: space-between;
+  margin: 87px 0px 42px 0px;
+}
+nav h1 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.nav-buttons a {
+  text-decoration: none;
+  color: black;
+  margin-left: 34px;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+/* banner styles */
+.main-banner {
+  justify-content: space-between;
+  margin: 50px 0;
+}
+.banner-content {
+  width: 50%;
+  margin: auto 0;
+
+}
+.banner-content h1 {
+  font-size: 3.25em;
+}
+.banner-content p {
+  font-weight: 600;
+}
+.banner-content .pink-button {
+  border-radius: 25px;
+}
+/* .image-overlap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-overlap img{
+  position: absolute;
+} */
