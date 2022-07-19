@@ -44,26 +44,28 @@ nav {
   margin: 87px 0px 42px 0px;
 }
 nav h1 {
-  font-size: 1.5em;
+  font-size: 2.5em;
   font-weight: 700;
 }
 .nav-buttons a {
   text-decoration: none;
   color: black;
-  margin-left: 34px;
-  font-size: 1em;
-  font-weight: 500;
+  margin-left: 40px;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+.fa-bars {
+  display: none;
 }
 
 /* ---------------------------------------------------banner styles */
 .main-banner {
   justify-content: space-between;
-  margin: 50px 0;
+  margin: 120px 0;
 }
 .banner-content {
   width: 50%;
   margin: auto 0;
-
 }
 .banner-content h1 {
   font-size: 3.25em;
@@ -74,15 +76,17 @@ nav h1 {
 .banner-content .pink-button {
   border-radius: 25px;
 }
-/* .image-overlap {
+.image-overlap {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.image-overlap img{
+.image-overlap img:nth-child(1){
   position: absolute;
-} */
+  right: -10px;
+  z-index: -1;
+}
 
 /* --------------------------------------------------various logos styles */
 .various-logos {
@@ -99,7 +103,9 @@ nav h1 {
 
 /* -------------------------------------------------popular collections styles */
 .popular-collections {
-  margin-top: 100px;
+  margin: 100px 20px 0px;
+  /* margin-top: 100px; */
+  text-align: right;
 }
 .popular-collections h1 {
   font-size: 28px;
@@ -115,6 +121,11 @@ nav h1 {
   padding: 14px;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
+  text-align: left;
+}
+.item img{
+  width: 100%;
+  margin-bottom: 15px;
 }
 .item h2 {
   font-size: 28px;
@@ -125,4 +136,187 @@ nav h1 {
 }
 .rating {
   margin: 8px 0;
+  font-size: 12px;
+}
+.fa-star {
+  color: orange;
+  margin-right: 3px;
+}
+.fa-star-half-stroke {
+  color: orange;
+}
+.rating p {
+  font-size: 16px;
+  margin-left: 10px;
+}
+.see-more-button {
+  display: inline-block;
+  margin-top: 30px;
+  text-decoration: none;
+  color: #E02C6D;
+}
+/* -----------------------------------------------------bottom banner styles */
+.bottom-banner {
+  width: 75%;
+  margin: 123px 0px;
+}
+.bottom-banner img {
+  height: 100%;
+}
+.bottom-banner-content {
+  margin: auto 0;
+  margin-left: 96px;
+}
+.bottom-banner-content h2 {
+  font-size: 38px;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.bottom-banner-content p {
+  font-size: 16px;
+}
+
+/*------------------------------------------------------- footer styles */
+footer {
+  flex-direction: column;
+  height: 240px;
+  text-align: center;
+  background-color: #0A0826;
+  color: #fff;
+}
+.footer h2 {
+  font-size: 24px;
+}
+.footer p {
+  font-size: 14px;
+}
+.social-icons i {
+  padding: 15px;
+}
+
+/* ---------------------------------------------------------media queries */
+@media screen and (max-width: 576px) {
+  /* ----------------------------collections media queries */
+  .popular-collections {
+    width: 85%;
+  }
+  .collections {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .item img{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+/* -----------------------------------mobile devices */
+
+@media screen and (max-width: 768px) {
+  /* -----------------------------navigation media queries */
+  nav {
+    margin-top: 25px;
+  }
+  nav h1 {
+    font-size: 1.3em;
+  }
+  nav .fa-bars {
+    display: block;
+  }
+  nav .collapsible {
+    display: none;
+  }
+  .nav-buttons a {
+    margin-left: 0;
+  }
+  /* ----------------------------main banner media queries */
+  .main-banner {
+    flex-direction: column-reverse;
+    margin-top: 70px;
+  }
+  .main-banner img {
+    width: 80%;
+  }
+  .main-banner img:nth-child(1) {
+    width: 90%;
+    right: inherit;
+  }
+  .main-banner h1 {
+    font-size: 36px;
+  }
+  .banner-content {
+    margin-top: 80px;
+    width: 100%;
+    text-align: center;
+  }
+  /* --------------------------various logos media queries */
+  .various-logos {
+    width: 90%;
+  }
+  .various-logos hr {
+    border: none;
+  }
+  .various-logos div {
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    justify-content: space-around;
+    row-gap: 20px;
+  }
+  .various-logos div img {
+    flex: 0 0 21%;
+  }
+  /* ----------------------------collections media queries */
+  
+
+
+  /* -----------------------------bottom banner media queries */
+  .bottom-banner {
+    flex-direction: column-reverse;
+  }
+  .bottom-banner-content {
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .popular-collections {
+    width: 90%;
+  }
+  .collections {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  nav h1 {
+    font-size: 26px;
+  }
+  .nav-buttons a {
+    font-size: 16px;
+    margin-left: 18px;
+  }
+  .main-banner h1 {
+    font-size: 36px;
+  }
+  .main-banner p {
+    font-size: 16px;
+  }
+  .container {
+    width: 90%;
+  }
+  .popular-collections {
+    width: 90%;
+  }
+  .collections {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .bottom-banner-content {
+    margin-left: 25px;
+  }
+  .bottom-banner-content p {
+    font-size: 14px;
+  }
 }
