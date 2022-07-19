@@ -1,4 +1,4 @@
-/* font imports*/
+/* ----------------------------------------------------------font imports*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500,700&display=swap');
 
 /* common styles */
@@ -10,8 +10,10 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
-
-/* utility classes */
+main {
+  flex-direction: column;
+}
+/* ----------------------------------------------------utility classes */
 .container {
   width: 85%;
 }
@@ -36,7 +38,7 @@ body {
   margin-top: 20px;
 }
 
-/* navigation styles */
+/* -------------------------------------------------navigation styles */
 nav {
   justify-content: space-between;
   margin: 87px 0px 42px 0px;
@@ -53,7 +55,7 @@ nav h1 {
   font-weight: 500;
 }
 
-/* banner styles */
+/* ---------------------------------------------------banner styles */
 .main-banner {
   justify-content: space-between;
   margin: 50px 0;
@@ -81,3 +83,46 @@ nav h1 {
 .image-overlap img{
   position: absolute;
 } */
+
+/* --------------------------------------------------various logos styles */
+.various-logos {
+  width: 70%;
+  margin: 50px 0px;
+}
+.various-logos div {
+  margin: 36px 62px;
+  justify-content: space-between;
+}
+.various-logos hr {
+  border: 1px solid rgb(245, 245, 245);
+}
+
+/* -------------------------------------------------popular collections styles */
+.popular-collections {
+  margin-top: 100px;
+}
+.popular-collections h1 {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+}
+.collections {
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+.item {
+  padding: 14px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+.item h2 {
+  font-size: 28px;
+  font-weight: 500;
+}
+.item-price {
+  font-size: 24px;
+}
+.rating {
+  margin: 8px 0;
+}
